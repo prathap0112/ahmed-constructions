@@ -1,19 +1,24 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 // Css
-import './Call-To-Action.css';
+import "./Call-To-Action.css";
 
 function CallToAction() {
   return (
-    <div className='call-to-action'>
-      <div className='container'>
+    <div className="call-to-action">
+      <div className="container">
         <section>
-          <h2 className='title-lg subline'>building inspiring spaces</h2>
-          <p className='content'>vivamus sed consectetur tellus dolor sit amet, consectetur adipiscing lorem elit sadip ipsum ets ficilis uns.</p>
+          <h2 className="title-lg subline">building inspiring spaces</h2>
+          <p className="content">
+            From luxurious homes to commercial spaces, we create inspiring
+            environments that reflect modern design and functionality.
+          </p>
         </section>
 
         <div>
-          <Link to='/get-quote' className='btn btn-primary btn-lg'>get a free quote</Link>
-          <p className='sub-btn'>Only takes a few seconds!</p>
+          <Link to="/get-quote" className="btn btn-primary btn-lg">
+            get a free quote
+          </Link>
+          <p className="sub-btn">Only takes a few seconds!</p>
         </div>
       </div>
     </div>

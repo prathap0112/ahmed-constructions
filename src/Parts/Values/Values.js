@@ -1,59 +1,63 @@
 // Components
-import HedSection from '../../Components/Hed-Section/Hed-Section';
+import HedSection from "../../Components/Hed-Section/Hed-Section";
 // Css
-import './Values.css';
+import "./Values.css";
 
 // Fake Server
 const data = [
   {
     id: 1,
-    icon: 'icon-home',
-    title: 'great services',
-    content: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia'
+    icon: "icon-home",
+    title: "great services",
+    content:
+      "We believe in delivering exceptional service from concept to completion.",
   },
-    
+
   {
     id: 2,
-    icon: 'icon-setting',
-    title: 'highest standards',
-    content: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia'
+    icon: "icon-setting",
+    title: "highest standards",
+    content:
+      "Quality and excellence define every step of our process, ensuring high standards across all projects.",
   },
-    
+
   {
     id: 3,
-    icon: 'icon-users',
-    title: 'professional team',
-    content: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia'
+    icon: "icon-users",
+    title: "professional team",
+    content:
+      "Our team of skilled professionals brings expertise, creativity, and dedication to each project.",
   },
-  
+
   {
     id: 4,
-    icon: 'icon-bulb',
-    title: 'creative solutions',
-    content: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia'
+    icon: "icon-bulb",
+    title: "creative solutions",
+    content:
+      "We offer unique, innovative solutions tailored to meet the specific needs of every client.",
   },
 ];
 
 function Values() {
   return (
-    <div className='values'>
-      <div className='container'>
+    <div className="values">
+      <div className="container">
         <HedSection
-          title='our core values'
-          content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.'
+          title="our core values"
+          content="Guiding principles that drive our commitment to quality, innovation, and customer satisfaction."
         />
 
-        <div className='parent-items'>
-          {data.map(item => {
-            const {id,icon,title,content} = item;
+        <div className="parent-items">
+          {data.map((item) => {
+            const { id, icon, title, content } = item;
 
             return (
-              <section key={id} className='loop-card'>
-                <div className='parent-icon'>
+              <section key={id} className="loop-card">
+                <div className="parent-icon">
                   <i className={`loop-icon ${icon}`}></i>
-                  <h3 className='title-sm subline'>{title}</h3>
+                  <h3 className="title-sm subline">{title}</h3>
                 </div>
-                
+
                 <p>{content}</p>
               </section>
             );

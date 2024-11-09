@@ -65,7 +65,7 @@ function Footer() {
         <section className="footer-item">
           <h3 className="title-sm">latest tweets</h3>
 
-          <a href="https://twitter.com/Theme_Fusion" className="text-link">
+          <a href="https://twitter.com/0wyte" className="text-link">
             Tweets by Theme_Fusion
           </a>
 
